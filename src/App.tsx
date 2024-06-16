@@ -3,6 +3,7 @@ import GlobalStyles from "./styles/GlobalStyles";
 import { theme } from "./styles/theme";
 import SearchBar from "./components/common/SearchBar";
 import Logo from "./components/common/Logo";
+import Card from "./components/common/Card";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <GlobalStyles />
       <Logo />
       <SearchBar />
+      <Card />
     </ThemeProvider>
   );
 }
