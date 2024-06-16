@@ -4,6 +4,7 @@ import { theme } from "./styles/theme";
 import SearchBar from "./components/common/SearchBar";
 import Logo from "./components/common/Logo";
 import Card from "./components/common/Card";
+import PlusButton from "./components/common/PlusButton";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Logo />
       <SearchBar />
       <Card />
+      <PlusButton />
     </ThemeProvider>
   );
 }
