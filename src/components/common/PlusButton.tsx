@@ -13,7 +13,8 @@ export default function PlusButton() {
 
 const S = {
   Container: styled(motion.div)`
-    position: absolute;
+    position: fixed;
+    background-color: white;
     bottom: 28px;
     right: 28px;
     display: flex;
