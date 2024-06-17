@@ -6,6 +6,7 @@ import { useState } from "react";
 import { FaRegCopy } from "react-icons/fa";
 import { IoIosMore } from "react-icons/io";
 import { MdDeleteOutline } from "react-icons/md";
+import { FaEdit } from "react-icons/fa";
 
 export default function Card() {
   const [isHover, setIsHover] = useState(false);
@@ -39,6 +40,7 @@ export default function Card() {
         </a>
         <S.TitleLayout>
           <span>테스트링크</span>
+          <FaEdit size={15} />
         </S.TitleLayout>
       </S.Container>
     </>
@@ -108,11 +110,23 @@ const S = {
   `,
 
   TitleLayout: styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 8px 6px 16px;
 
     & span {
       font-size: 14px;
       font-weight: 600;
+    }
+
+    & svg {
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        scale: 1.1;
+      }
     }
   `,
 };
