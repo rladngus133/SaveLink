@@ -4,9 +4,9 @@ import styled from "styled-components";
 export default function SearchBar() {
   return (
     <S.Container>
-      <S.Input type="text" />
+      <S.Input type="text" id="search-input" />
       <S.Button>
-        <FaSearch />
+        <FaSearch color="#bbb" />
       </S.Button>
     </S.Container>
   );
@@ -15,13 +15,15 @@ export default function SearchBar() {
 const S = {
   Container: styled.div`
     display: flex;
+    width: 100%;
   `,
 
   Input: styled.input`
     flex: 1;
     padding: 11px;
+    background-color: #eee;
 
-    border: 1px solid ${({ theme }) => theme.colors.main};
+    border: none;
     border-right: none;
     border-radius: 24px 0 0 24px;
     outline: none;
@@ -29,8 +31,7 @@ const S = {
 
   Button: styled.button`
     padding-right: 11px;
-
-    border: 1px solid ${({ theme }) => theme.colors.main};
+    background-color: #eee;
     border-left: none;
     border-radius: 0 24px 24px 0;
   `,

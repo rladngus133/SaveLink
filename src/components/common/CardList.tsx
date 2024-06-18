@@ -8,7 +8,7 @@ export default function CardList({ children }: { children: ReactNode }) {
 const S = {
   Container: styled.div`
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 8px;
     padding-inline: 12px;

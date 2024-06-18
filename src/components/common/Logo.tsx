@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export default function Logo() {
-  return <S.H1>SaveLink</S.H1>;
+  return <S.H1>S</S.H1>;
 }
 
 const S = {
