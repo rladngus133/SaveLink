@@ -1,5 +1,7 @@
 import { Link, RouterProvider, createBrowserRouter } from "react-router-dom";
 import MyLink from "./pages/MyLink";
+import Register from "./pages/Register";
+import Login from "./pages/Login";
 
 export default function Router() {
   const router = createBrowserRouter([
@@ -16,11 +18,11 @@ export default function Router() {
     },
     {
       path: "/login",
-      element: "login",
+      element: <Login />,
     },
     {
       path: "/register",
-      element: "register",
+      element: <Register />,
     },
     {
       path: "/mylink",
