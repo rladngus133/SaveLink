@@ -15,7 +15,6 @@ const useAuthForm = () => {
   return {
     email,
     password,
-
     handleEmailChange,
     handlePasswordChange,
   };

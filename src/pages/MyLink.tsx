@@ -8,13 +8,12 @@ export default function MyLink() {
   return (
     <>
       <Header />
-      <S.NavSpacer>
-        <CardList>
-          {[...Array(10)].map((_, i) => (
-            <Card key={i} />
-          ))}
-        </CardList>
-      </S.NavSpacer>
+      <S.NavSpacer />
+      <CardList>
+        {[...Array(1)].map((_, i) => (
+          <Card key={i} />
+        ))}
+      </CardList>
       <PlusButton />
     </>
   );
